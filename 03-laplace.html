@@ -398,8 +398,8 @@ document.write(`
 <span class="eqno">(4)<a class="headerlink" href="#equation-eq-ch3-inverse-laplace" title="Permalink to this equation">#</a></span>\[f(t) = \mathcal{L}^{-1} \{F(s)\} = \dfrac{1}{2\pi i} \lim_{T \rightarrow \infty} \int_{\gamma - iT}^{\gamma + iT} e^{st} F(s)ds\]</div>
 </div>
 <p>Practically, you will not need to explicitly compute the integral in <a class="reference internal" href="#equation-eq-ch3-laplace">(3)</a> or <a class="reference internal" href="#equation-eq-ch3-inverse-laplace">(4)</a>. Diving into the details of the inverse Laplace transform is beyond the scope of this course as it requires a more in-depth understanding in complex analysis. Instead, we have tables describing the Laplace transform of commonly used functions, and we can use those tables freely without the need to redrive the expressions each time.</p>
-<p>While the Laplace transform may seem even more complicated, it actually will simplify a lot of the algebra and analysis. In fact, rather than working with convolution integrals, applying the Laplace transform results in an <em>algerbra</em> problem, things like solving quadratic equations, grouping terms, factorizing, completing the square, etc.
-This is becuase the <strong>the Laplace transform of the convolution of two functions in time is the product of the respective Laplace transform</strong>.</p>
+<p>While the Laplace transform may seem even more complicated, it actually will simplify a lot of the algebra and analysis. In fact, rather than working with convolution integrals, applying the Laplace transform results in an <em>algebra</em> problem, things like solving quadratic equations, grouping terms, factorizing, completing the square, etc.
+This is becuase the <strong>the Laplace transform xof the convolution of two functions in time is the product of the respective Laplace transform</strong>.</p>
 <div class="definition admonition">
 <p class="admonition-title">Theorem (Laplace transform of convolution)</p>
 <p>The Laplace Transform of the convolution of two functions is given by</p>
@@ -469,7 +469,7 @@ Ok, but after taking the Laplace transform and performing some algebraic manipul
 </div>
 <div class="exercise example admonition" id="ch3-laplace-partial-fractions">
 
-<p class="admonition-title"><span class="caption-number">Exercise 8 </span> (Partial fractions)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 8 </span> (Inverse Laplace Transform)</p>
 <section id="exercise-content">
 <p>Remember that <span class="math notranslate nohighlight">\(x(t)=e^{-at}\)</span> and its Laplace transform is <span class="math notranslate nohighlight">\(X(s)=\frac{1}{s+a}\)</span>.
 Now, take the inverse Laplace transform of the following: <span class="math notranslate nohighlight">\(X(s) = \frac{5}{s+3} + \frac{2}{s^2+16}\)</span></p>
@@ -524,7 +524,7 @@ Now, take the inverse Laplace transform of the following: <span class="math notr
 \[
 \mathcal{L}(\sinh(at)) = \frac{a}{s^2 - a^2}, \quad \text{for } |s| &gt; |a|.
 \]</div>
-<p>The shift property for (e^{at}) is given by:</p>
+<p>The shift property for <span class="math notranslate nohighlight">\(e^{at}\)</span> is given by:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L}(e^{at}f(t)) = F(s - a),
@@ -533,7 +533,7 @@ Now, take the inverse Laplace transform of the following: <span class="math notr
 <p>Let’s use these two properties to compute the Laplace transform:</p>
 <div class="math notranslate nohighlight">
 \[
-x(t) = \mathcal{L}^{-1} (X(s)) = \mathcal{L}^{-1} \left( \frac{7}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{2}} \right) = \left( 14 \frac{\frac{1}{2}}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{4}^2} \right) = 14 e^{-\frac{3}{2}t} \sinh\left(\frac{t}{2}\right)
+x(t) = \mathcal{L}^{-1} (X(s)) = \mathcal{L}^{-1} \left( \frac{7}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{4}} \right) = \left( 14 \frac{\frac{1}{2}}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{2}^2} \right) = 14 e^{-\frac{3}{2}t} \sinh\left(\frac{t}{2}\right)
 \]</div>
 <p>You can convince yourself with further trigonometric properties that:</p>
 <div class="math notranslate nohighlight">
