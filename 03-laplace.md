@@ -26,8 +26,8 @@ f(t) = \mathcal{L}^{-1} \{F(s)\} = \dfrac{1}{2\pi i} \lim_{T \rightarrow \infty}
 
 Practically, you will not need to explicitly compute the integral in {eq}`eq-ch3-laplace` or {eq}`eq-ch3-inverse-laplace`. Diving into the details of the inverse Laplace transform is beyond the scope of this course as it requires a more in-depth understanding in complex analysis. Instead, we have tables describing the Laplace transform of commonly used functions, and we can use those tables freely without the need to redrive the expressions each time.
 
-While the Laplace transform may seem even more complicated, it actually will simplify a lot of the algebra and analysis. In fact, rather than working with convolution integrals, applying the Laplace transform results in an *algerbra* problem, things like solving quadratic equations, grouping terms, factorizing, completing the square, etc. 
-This is becuase the **the Laplace transform of the convolution of two functions in time is the product of the respective Laplace transform**.
+While the Laplace transform may seem even more complicated, it actually will simplify a lot of the algebra and analysis. In fact, rather than working with convolution integrals, applying the Laplace transform results in an *algebra* problem, things like solving quadratic equations, grouping terms, factorizing, completing the square, etc.
+This is becuase the **the Laplace transform xof the convolution of two functions in time is the product of the respective Laplace transform**.
 
 
 :::{admonition} Theorem (Laplace transform of convolution)
@@ -111,7 +111,7 @@ Evaluate $ \mathcal{L} \{ f(t) \}$ for $f(t) = t \cos(\omega t)$ and $f(t) = t\s
 ```
 
 
-:::{exercise} Partial fractions
+:::{exercise} Inverse Laplace Transform
 :class: example
 :label: ch3-laplace-partial-fractions
 
@@ -178,7 +178,7 @@ $$
 \mathcal{L}(\sinh(at)) = \frac{a}{s^2 - a^2}, \quad \text{for } |s| > |a|.
 $$
 
-The shift property for \(e^{at}\) is given by:
+The shift property for $e^{at}$ is given by:
 
 $$
 \mathcal{L}(e^{at}f(t)) = F(s - a),
@@ -189,7 +189,7 @@ where $F(s)$ is the Laplace transform of $f(t)$.
 Let's use these two properties to compute the Laplace transform:
 
 $$
-x(t) = \mathcal{L}^{-1} (X(s)) = \mathcal{L}^{-1} \left( \frac{7}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{2}} \right) = \left( 14 \frac{\frac{1}{2}}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{4}^2} \right) = 14 e^{-\frac{3}{2}t} \sinh\left(\frac{t}{2}\right)
+x(t) = \mathcal{L}^{-1} (X(s)) = \mathcal{L}^{-1} \left( \frac{7}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{4}} \right) = \left( 14 \frac{\frac{1}{2}}{\left(s + \frac{3}{2}\right)^2 - \frac{1}{2}^2} \right) = 14 e^{-\frac{3}{2}t} \sinh\left(\frac{t}{2}\right)
 $$
 
 You can convince yourself with further trigonometric properties that:
