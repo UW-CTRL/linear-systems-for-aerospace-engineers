@@ -178,7 +178,7 @@ We wish to solve the problem $ M\ddot{\mathbf{x}}  + K{\mathbf{x}} = 0 $, with i
 We "guess" that the solution is of the form $\mathbf{x}(t) = \alpha e^{-i\omega t}\mathbf{v}$. 
 (Perhaps in your previous differential equations course, you were just told a similar thing, that you should just "guess" that the solution is of a particular form, and you just went along with it. Well, with the derivation above, you can see that the guess is not really a guess, but is in fact grounded in linear algebra and eigen decomposition!)
 
-We plug out "guess" back into the ODE,
+We plug our "guess" back into the ODE,
 
 $$
  M\ddot{\mathbf{x}}  + K{\mathbf{x}} = 0\\ 

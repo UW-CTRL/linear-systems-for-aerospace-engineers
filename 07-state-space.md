@@ -159,7 +159,7 @@ $$
     (sI-A)^{-1} &= \frac{1}{s} \left(I - \frac{A}{s}\right)^{-1}\\ 
                 &= \frac{I}{s} + \frac{A}{s^2} + \frac{A^2}{s^3} + \ldots\\
     \mathcal{L}^{-1}\lbrace (sI-A)^{-1} \rbrace &= I + tA + \frac{(tA)^2}{s!} + \ldots\\
-    & e^{At} \quad \text{(Matrix exponential)} 
+    &= e^{At} \quad \text{(Matrix exponential)}
 ```
 
 :::
@@ -191,7 +191,7 @@ With this new state representation, considering the $C$, $K$, and $B$ matrices d
 $$
 \dot{\mathbf{q}} = 
 \underbrace{\begin{bmatrix}
-0 & I \\ -M^{-1}C & -M^{-1}K
+0 & I \\ -M^{-1}K & -M^{-1}C
 \end{bmatrix}}_{A \text{ matrix}} + \underbrace{\begin{bmatrix}
 0 \\ -M^{-1}B 
 \end{bmatrix}}_{B \text{ matrix}} \mathbf{u}
